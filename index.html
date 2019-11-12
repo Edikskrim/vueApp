@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Cryptocurrency Pricing Application</title>
+</head>
+<body>
+<div class="container" id="app">
+    <div v-for="(result, index) in results">
+        <div class="card-section">
+            <div class="card-divider">
+                <span @click="openResource(result)">
+                    <p> {{ index }} url: {{ result }} </p>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://unpkg.com/vue"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="vueApp.js"></script>
+</body>
+</html>
